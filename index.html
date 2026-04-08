@@ -10,49 +10,46 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="bg-noise"></div>
+
     <header class="site-header">
       <div class="container header-inner">
-        <a href="#hero" class="logo">RUNIA</a>
+        <a href="#hero" class="brand" aria-label="RUNIA inicio">
+          <span class="brand-badge">🏆</span>
+          <span>
+            <strong>PADEL</strong>
+            <small>TORNEOS</small>
+          </span>
+        </a>
+
         <nav class="desktop-nav" aria-label="Navegación principal">
-          <a href="#problema">Problema</a>
-          <a href="#como-funciona">Solución</a>
-          <a href="#beneficios">Beneficios</a>
+          <a class="active" href="#hero">Inicio</a>
+          <a href="#como-funciona">Cómo funciona</a>
           <a href="#pricing">Planes</a>
         </nav>
+
         <a class="btn btn-primary" href="https://padel-app-alpha.vercel.app/" target="_blank" rel="noreferrer">Probar demo</a>
       </div>
     </header>
 
     <main>
       <section id="hero" class="section hero reveal">
-        <div class="hero-blur hero-blur--one"></div>
-        <div class="hero-blur hero-blur--two"></div>
-        <div class="container hero-grid">
-          <div>
-            <p class="kicker">Runia Padel Suite</p>
-            <h1>Organizá torneos de pádel en minutos, no en horas</h1>
-            <p class="lead">
-              RUNIA arma automáticamente zonas, llaves y horarios según ranking y disponibilidad de jugadores
-            </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="https://padel-app-alpha.vercel.app/" target="_blank" rel="noreferrer">Probar demo</a>
-              <a class="btn btn-secondary" href="#como-funciona">Ver cómo funciona</a>
-            </div>
+        <div class="container hero-content">
+          <p class="hero-label">Sistema de gestión de torneos de pádel</p>
+          <h1>TORNEOS</h1>
+          <p class="hero-subtitle">Organizá torneos de pádel en minutos, no en horas</p>
+          <p class="lead">
+            RUNIA arma automáticamente zonas, llaves y horarios según ranking y disponibilidad de jugadores.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://padel-app-alpha.vercel.app/" target="_blank" rel="noreferrer">Probar demo</a>
+            <a class="btn btn-outline" href="#como-funciona">Ver cómo funciona</a>
           </div>
-          <article class="glass-card">
-            <img src="https://image.pollinations.ai/prompt/futuristic%20padel%20court%20at%20sunset%2C%20realistic%2C%20cinematic?width=1000&height=750&seed=11" alt="Cancha de pádel moderna generada por IA" />
-            <div class="glass-content">
-              <strong>Planificación automática</strong>
-              <p>Fixture inteligente + horarios listos para compartir.</p>
-            </div>
-          </article>
         </div>
       </section>
 
@@ -60,7 +57,7 @@
         <div class="container card">
           <h2>Armar un torneo no debería ser un dolor de cabeza</h2>
           <ul class="feature-list" id="problem-list"></ul>
-          <p class="section-footnote">Terminás perdiendo tiempo y plata</p>
+          <p class="section-footnote">Terminás perdiendo tiempo y plata.</p>
         </div>
       </section>
 
@@ -77,7 +74,7 @@
             <h3>Cargás esto</h3>
             <ul class="feature-list" id="input-list"></ul>
           </article>
-          <article class="card card-highlight">
+          <article class="card card-accent">
             <h3>Obtenés esto</h3>
             <ul class="feature-list" id="output-list"></ul>
           </article>
@@ -93,8 +90,7 @@
 
       <section id="galeria" class="section reveal">
         <div class="container">
-          <h2>Imágenes de pádel generadas por IA</h2>
-          <p class="lead">Inspiración visual para campañas, redes y branding del club.</p>
+          <h2>Visuales estilo Global Padel Center</h2>
           <div class="gallery-grid" id="gallery-grid"></div>
         </div>
       </section>
@@ -114,7 +110,7 @@
       </section>
 
       <section id="cta" class="section reveal">
-        <div class="container card card-center">
+        <div class="container card card-center card-cta">
           <h2>Empezá a organizar torneos como un pro</h2>
           <a class="btn btn-primary" href="https://padel-app-alpha.vercel.app/" target="_blank" rel="noreferrer">Probar RUNIA</a>
         </div>

@@ -16,9 +16,9 @@ const sections = {
   wowOutput: ['Fixture completo', 'Horarios listos', 'Zonas equilibradas', 'Llaves armadas'],
   benefits: [
     'Organizás más torneos',
-    'Reducís errores',
+    'Reducís errores operativos',
     'Mejor experiencia para jugadores',
-    'Escalás sin más personal'
+    'Escalás sin sumar más personal'
   ],
   pricing: [
     {
@@ -39,14 +39,14 @@ const sections = {
     }
   ],
   gallery: [
-    ['Cancha profesional nocturna', 'futuristic padel stadium at night, hyper realistic, dramatic lights', 21],
-    ['Partido en club premium', 'professional padel match in modern club, high detail, natural light', 22],
-    ['Entrenamiento técnico', 'padel training session with coach, realistic photography, dynamic action', 23],
-    ['Vista aérea de torneos', 'aerial view of multiple padel courts and tournament crowd, cinematic', 24],
-    ['Equipo celebrando', 'padel team celebrating victory, confetti, realistic, vibrant', 25],
-    ['Club con branding RUNIA', 'modern padel club lobby with digital screens and branding, photo realistic', 26],
-    ['Partido mixto', 'mixed doubles padel rally, realistic sports photography, crisp detail', 27],
-    ['Atardecer en la cancha', 'sunset padel court in argentina, realistic, warm colors', 28]
+    ['Neón azul y lima', 'dark padel court neon cyan and lime lights, realistic, cinematic', 41],
+    ['Club premium nocturno', 'luxury padel center at night with futuristic lights, realistic', 42],
+    ['Partido competitivo', 'professional padel tournament rally, dramatic lights, ultra realistic', 43],
+    ['Gestión desde app', 'sports manager tablet dashboard for padel tournament, dark ui, realistic', 44],
+    ['Final del torneo', 'padel final match crowd cheering in night arena, cinematic realism', 45],
+    ['Canchas múltiples', 'multiple padel courts from aerial view, dark ambience neon accents', 46],
+    ['Entrenamiento técnico', 'padel training drill in modern indoor court, realistic sports photo', 47],
+    ['Celebración del club', 'winning padel team celebrating with trophy, neon blue and lime atmosphere', 48]
   ]
 };
 
@@ -65,7 +65,7 @@ const renderBenefits = () => {
       (benefit) => `
       <article class="benefit-card">
         <h3>${benefit}</h3>
-        <p>Automatizá tareas repetitivas y enfocá tu tiempo en crecer tu operación.</p>
+        <p>Automatizá tareas repetitivas y enfocá tu tiempo en hacer crecer tu club.</p>
       </article>
     `
     )
@@ -82,9 +82,7 @@ const renderPricing = () => {
       <article class="price-card ${plan.featured ? 'price-card--featured' : ''}">
         <h3>${plan.name}</h3>
         <p>${plan.subtitle}</p>
-        <ul>
-          ${plan.items.map((item) => `<li>${item}</li>`).join('')}
-        </ul>
+        <ul>${plan.items.map((item) => `<li>${item}</li>`).join('')}</ul>
       </article>
     `
     )
