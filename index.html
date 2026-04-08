@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RUNIA | Torneos de pádel automáticos</title>
+    <title>RUNIA | TORNEOS DE PÁDEL AUTOMÁTICOS</title>
     <meta
       name="description"
-      content="RUNIA organiza automáticamente torneos de pádel: zonas, llaves y horarios según ranking y disponibilidad."
+      content="RUNIA organiza automáticamente torneos de pádel: inscripciones por link, armado inteligente, control de capacidad y seguimiento premium por WhatsApp."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="bg-grid"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
 
     <header class="site-header">
       <div class="container header-inner">
@@ -26,11 +26,11 @@
           </span>
         </a>
         <nav class="desktop-nav" aria-label="Navegación principal">
-          <a class="active" href="#hero">Inicio</a>
-          <a href="#como-funciona">Cómo funciona</a>
-          <a href="#pricing">Planes</a>
+          <a class="active" href="#hero">INICIO</a>
+          <a href="#como-funciona">CÓMO FUNCIONA</a>
+          <a href="#beneficios">BENEFICIOS</a>
         </nav>
-        <a class="btn btn-primary" href="https://padel-app-alpha.vercel.app/" target="_blank" rel="noreferrer">Probar demo</a>
+        <a class="btn btn-primary" href="https://padel-app-alpha.vercel.app/" target="_blank" rel="noreferrer">PROBAR DEMO</a>
       </div>
     </header>
 
@@ -39,101 +39,191 @@
         <div class="hero-gradient"></div>
         <div class="container hero-layout">
           <div class="hero-copy">
-            <p class="hero-label">Automatización inteligente para clubes y torneos</p>
-            <h1>El futuro de los torneos de pádel ya llegó</h1>
-            <p class="hero-subtitle">RUNIA organiza automáticamente zonas, horarios y llaves en segundos</p>
+            <p class="hero-label">SOFTWARE SERIO PARA TORNEOS PROFESIONALES</p>
+            <h1>EL FUTURO DE LOS TORNEOS DE PÁDEL YA LLEGÓ</h1>
+            <p class="hero-subtitle">
+              RUNIA organiza automáticamente inscripciones, horarios, zonas, llaves y seguimiento de jugadores en un solo sistema.
+            </p>
             <div class="hero-actions">
-              <a class="btn btn-primary btn-lg" href="https://padel-app-alpha.vercel.app/" target="_blank" rel="noreferrer">Probar RUNIA ahora</a>
-              <a class="btn btn-outline" href="#como-funciona">Ver cómo funciona</a>
+              <a class="btn btn-primary btn-lg" href="https://padel-app-alpha.vercel.app/" target="_blank" rel="noreferrer">PROBAR DEMO</a>
+              <a class="btn btn-outline btn-lg" href="#como-funciona">VER CÓMO FUNCIONA</a>
             </div>
           </div>
 
-          <article class="dashboard-mockup" aria-label="Vista de sistema RUNIA">
-            <div class="mockup-head">
-              <span></span><span></span><span></span>
-            </div>
-            <div class="mockup-body">
-              <p class="mockup-title">Flujo inteligente</p>
-              <div class="flow-step">👥 Jugadores + Ranking</div>
-              <div class="flow-arrow">↓</div>
-              <div class="flow-step">🧠 RUNIA procesa disponibilidad</div>
-              <div class="flow-arrow">↓</div>
-              <div class="flow-step flow-step--accent">✅ Fixture + Llaves + Horarios</div>
+          <article class="system-shot-frame" id="hero-system-shot" aria-label="Espacio para captura principal del sistema">
+            <!-- INSERTAR AQUÍ CAPTURA REAL DEL DASHBOARD -->
+            <div class="shot-placeholder">
+              <p>HERO SYSTEM SHOT</p>
+              <small>REEMPLAZAR POR CAPTURA REAL DEL SISTEMA</small>
             </div>
           </article>
         </div>
       </section>
 
-      <section id="social-proof" class="section section-dark reveal">
-        <div class="container stats-grid" id="stats-grid"></div>
-      </section>
-
-      <section id="visual-sport" class="section reveal">
-        <div class="container">
-          <h2>Visuales premium de torneos de pádel</h2>
-          <div class="gallery-grid" id="gallery-grid"></div>
-        </div>
-      </section>
-
-      <section id="problema" class="section section-dark reveal">
-        <div class="container">
-          <h2>Armar un torneo no debería ser un dolor de cabeza</h2>
-          <div class="tech-grid" id="problem-grid"></div>
-        </div>
-      </section>
-
-      <section id="como-funciona" class="section reveal">
-        <div class="container">
-          <h2>Cómo funciona RUNIA</h2>
-          <div class="steps" id="steps-grid"></div>
-        </div>
-      </section>
-
-      <section id="solucion" class="section section-dark reveal">
-        <div class="container">
-          <h2>RUNIA hace todo por vos</h2>
-          <div class="tech-grid" id="solution-grid"></div>
-        </div>
-      </section>
-
-      <section id="wow" class="section reveal">
-        <div class="container compare-grid">
-          <article class="card">
-            <h3>Cargás esto</h3>
-            <ul class="feature-list" id="input-list"></ul>
+      <section id="signup" class="section section-dark reveal">
+        <div class="container split-layout">
+          <article>
+            <h2>INSCRIPCIÓN AUTOMÁTICA DE JUGADORES</h2>
+            <p>
+              Los jugadores se inscriben mediante un link, completan sus datos una sola vez y quedan registrados automáticamente en el sistema.
+            </p>
+            <p>
+              Cada jugador también puede cargar su restricción horaria para que RUNIA contemple disponibilidad real antes de armar el torneo.
+            </p>
           </article>
-          <article class="card card-accent">
-            <h3>Obtenés esto</h3>
-            <ul class="feature-list" id="output-list"></ul>
+          <article class="system-shot-frame" id="signup-system-shot" aria-label="Espacio para captura de inscripción">
+            <!-- INSERTAR AQUÍ CAPTURA REAL DE INSCRIPCIÓN -->
+            <div class="shot-placeholder"><p>SIGNUP SYSTEM SHOT</p></div>
           </article>
         </div>
       </section>
 
-      <section id="beneficios" class="section section-dark reveal">
+      <section id="builder" class="section reveal">
+        <div class="container split-layout">
+          <article>
+            <h2>EL SISTEMA ARMA EL TORNEO SOLO</h2>
+            <p>
+              RUNIA cruza ranking, restricciones horarias, categorías, disponibilidad y complejos para construir automáticamente un torneo ordenado y ejecutable.
+            </p>
+            <ul class="feature-list">
+              <li>RANKING Y CATEGORÍAS INTEGRADAS EN LA LÓGICA DE ARMADO</li>
+              <li>RESTRICCIONES HORARIAS REALES DE CADA JUGADOR</li>
+              <li>DISTRIBUCIÓN INTELIGENTE POR COMPLEJOS Y DISPONIBILIDAD</li>
+              <li>ZONAS, LLAVES Y HORARIOS GENERADOS EN UN SOLO FLUJO</li>
+            </ul>
+          </article>
+          <article class="system-shot-frame system-shot-frame--large" id="tournament-builder-shot" aria-label="Espacio para captura de armado automático">
+            <!-- INSERTAR AQUÍ CAPTURA REAL DEL ARMADO DE TORNEO -->
+            <div class="shot-placeholder"><p>TOURNAMENT BUILDER SHOT</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="capacity" class="section section-dark reveal">
         <div class="container">
-          <h2>Más torneos. Menos trabajo. Más ingresos.</h2>
-          <div class="benefits-grid" id="benefits-grid"></div>
+          <h2>SABE SI TU TORNEO ES POSIBLE ANTES DE EMPEZAR</h2>
+          <div class="cards-grid cards-grid--3">
+            <article class="info-card">
+              <h3>DETECCIÓN DE FALTA DE CANCHAS</h3>
+              <p>El sistema alerta cuando la cantidad o tipo de canchas disponibles no alcanza para cumplir el cronograma.</p>
+            </article>
+            <article class="info-card">
+              <h3>CONTROL DE CAPACIDAD TOTAL</h3>
+              <p>RUNIA identifica si el tamaño del torneo supera la infraestructura disponible antes de iniciar el armado.</p>
+            </article>
+            <article class="info-card">
+              <h3>MENOS ERRORES OPERATIVOS</h3>
+              <p>Se evitan reprogramaciones de último momento y se protege la experiencia de jugadores y organizadores.</p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section id="demo" class="section reveal">
-        <div class="container card card-center card-cta">
-          <h2>Probalo ahora</h2>
-          <a class="btn btn-primary btn-lg" href="https://padel-app-alpha.vercel.app/" target="_blank" rel="noreferrer">Entrar a la demo</a>
+      <section id="whatsapp" class="section reveal">
+        <div class="container split-layout">
+          <article>
+            <h2>SEGUIMIENTO AUTOMÁTICO POR WHATSAPP</h2>
+            <p>
+              En planes premium, RUNIA envía automáticamente horarios, próximos partidos, sede asignada y recordatorios clave para cada jugador.
+            </p>
+            <div class="pill-list">
+              <span>ENVÍO DE HORARIOS</span>
+              <span>AVISO DE PRÓXIMO PARTIDO</span>
+              <span>NOTIFICACIÓN DE SEDE</span>
+              <span>RECORDATORIOS PREMIUM</span>
+            </div>
+          </article>
+          <article class="system-shot-frame" id="dashboard-system-shot" aria-label="Espacio para visual WhatsApp o dashboard">
+            <!-- INSERTAR AQUÍ CAPTURA REAL DEL DASHBOARD -->
+            <div class="shot-placeholder"><p>DASHBOARD SYSTEM SHOT</p></div>
+          </article>
         </div>
       </section>
 
-      <section id="pricing" class="section section-dark reveal">
+      <section id="multi-complejo" class="section section-dark reveal">
+        <div class="container split-layout">
+          <article>
+            <h2>MULTI COMPLEJO. MULTI CONDICIÓN. UNA SOLA LÓGICA</h2>
+            <p>
+              Gestioná múltiples clubes y complejos con canchas de condiciones distintas, manteniendo coherencia deportiva y operativa.
+            </p>
+            <ul class="feature-list">
+              <li>AGRUPACIÓN DE PARTIDOS POR CONDICIONES SIMILARES</li>
+              <li>OPTIMIZACIÓN POR CERCANÍA ENTRE SEDES</li>
+              <li>DISTRIBUCIÓN POR DISPONIBILIDAD REAL DE CADA COMPLEJO</li>
+            </ul>
+          </article>
+          <article class="system-shot-frame" id="venues-system-shot" aria-label="Espacio para captura de complejos">
+            <!-- INSERTAR AQUÍ CAPTURA REAL DE COMPLEJOS -->
+            <div class="shot-placeholder"><p>VENUES SYSTEM SHOT</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="ranking" class="section reveal">
+        <div class="container split-layout">
+          <article>
+            <h2>RANKING, HISTORIAL Y ESTADÍSTICAS DE CADA JUGADOR</h2>
+            <p>
+              RUNIA centraliza historial, ranking por categoría, estadísticas y evolución en el tiempo para tomar mejores decisiones en cada torneo.
+            </p>
+          </article>
+          <article class="system-shot-frame" id="ranking-system-shot" aria-label="Espacio para captura de ranking">
+            <!-- INSERTAR AQUÍ CAPTURA REAL DE RANKING -->
+            <div class="shot-placeholder"><p>RANKING SYSTEM SHOT</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="como-funciona" class="section section-dark reveal">
         <div class="container">
-          <h2>Planes para cada etapa de crecimiento</h2>
-          <div class="pricing-grid" id="pricing-grid"></div>
+          <h2>CÓMO FUNCIONA</h2>
+          <div class="cards-grid cards-grid--4">
+            <article class="step-card">
+              <span class="step-number">01</span>
+              <h3>EL JUGADOR SE INSCRIBE</h3>
+              <p>Se registra desde un link y deja sus datos listos para competir.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">02</span>
+              <h3>RUNIA REGISTRA Y ORDENA</h3>
+              <p>El sistema guarda automáticamente la información y valida condiciones.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">03</span>
+              <h3>EL SISTEMA ARMA EL TORNEO</h3>
+              <p>Genera zonas, llaves y horarios según ranking, disponibilidad y complejos.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">04</span>
+              <h3>LOS JUGADORES RECIBEN SU INFORMACIÓN</h3>
+              <p>Reciben horarios y datos de partido, con seguimiento premium por WhatsApp.</p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section id="cta" class="section reveal">
-        <div class="container card card-center card-cta-final">
-          <h2>Empezá a organizar torneos como un pro</h2>
-          <a class="btn btn-primary btn-lg" href="https://padel-app-alpha.vercel.app/" target="_blank" rel="noreferrer">Probar RUNIA ahora</a>
+      <section id="beneficios" class="section reveal">
+        <div class="container">
+          <h2>MÁS ORDEN. MENOS CAOS. MÁS TORNEOS.</h2>
+          <div class="cards-grid cards-grid--5">
+            <article class="info-card"><h3>MENOS TIEMPO OPERATIVO</h3></article>
+            <article class="info-card"><h3>MENOS ERRORES</h3></article>
+            <article class="info-card"><h3>MEJOR EXPERIENCIA DEL JUGADOR</h3></article>
+            <article class="info-card"><h3>MÁS TORNEOS CON LA MISMA ESTRUCTURA</h3></article>
+            <article class="info-card"><h3>ESCALABILIDAD REAL PARA CLUBES Y ASOCIACIONES</h3></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" class="section section-dark reveal">
+        <div class="container final-cta">
+          <h2>EMPEZÁ A ORGANIZAR TORNEOS COMO UN PRO</h2>
+          <p>Automatizá tu operación y llevá tu organización a un estándar premium desde el próximo torneo.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="https://padel-app-alpha.vercel.app/" target="_blank" rel="noreferrer">PROBAR RUNIA</a>
+            <a class="btn btn-outline btn-lg" href="https://padel-app-alpha.vercel.app/" target="_blank" rel="noreferrer">SOLICITAR DEMO</a>
+          </div>
         </div>
       </section>
     </main>
