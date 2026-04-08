@@ -53,6 +53,21 @@ body {
 .section {
   position: relative;
   padding: clamp(110px, 14vw, 200px) 0;
+  --float-offset: 0px;
+}
+
+.section::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  top: 16%;
+  right: 6%;
+  pointer-events: none;
+  z-index: -1;
+  transform: translateY(var(--float-offset));
+  background: radial-gradient(circle, rgba(184, 255, 60, 0.08) 0%, rgba(184, 255, 60, 0) 70%);
 }
 
 .section-dark {
@@ -69,7 +84,7 @@ body {
 }
 
 .header-inner {
-  min-height: 84px;
+  min-height: 78px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -89,25 +104,30 @@ body {
 }
 
 .desktop-nav {
-  display: none;
-  gap: 34px;
+  display: flex;
+  gap: 20px;
 }
 
 .desktop-nav a {
-  color: var(--muted);
+  color: #fff;
   text-decoration: none;
-  font-size: 0.94rem;
-  font-weight: 500;
-  transition: color 0.24s ease;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  transition: color 0.24s ease, text-shadow 0.24s ease;
 }
 
 .desktop-nav a:hover {
-  color: #fff;
+  color: var(--lime);
+  text-shadow: var(--lime-glow);
 }
 
 .hero {
-  padding-top: clamp(150px, 19vw, 250px);
-  padding-bottom: clamp(130px, 15vw, 210px);
+  padding-top: clamp(86px, 10vw, 126px);
+  padding-bottom: clamp(74px, 9vw, 112px);
+  min-height: min(84vh, 760px);
+  display: grid;
+  align-items: center;
 }
 
 .hero-gradient {
@@ -127,22 +147,8 @@ body {
 }
 
 .hero-copy {
-  max-width: 760px;
-}
-
-.section-logo {
-  width: clamp(152px, 22vw, 228px);
-  height: auto;
-  margin-bottom: 28px;
-  filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.3));
-}
-
-.section-logo--hero {
-  margin-bottom: 36px;
-}
-
-.section-logo--cta {
-  margin: 0 auto 28px;
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 h1,
@@ -160,8 +166,8 @@ h2 {
 }
 
 h1 {
-  font-size: clamp(2.08rem, 6vw, 4.3rem);
-  max-width: 15ch;
+  font-size: clamp(1.95rem, 6vw, 4rem);
+  max-width: 14ch;
 }
 
 h2 {
@@ -184,9 +190,9 @@ p {
 
 .hero-subtitle {
   margin-top: 24px;
-  max-width: 58ch;
+  max-width: 48ch;
   color: #e6eeff;
-  font-size: clamp(1.02rem, 1.9vw, 1.2rem);
+  font-size: clamp(0.96rem, 1.7vw, 1.15rem);
 }
 
 .hero-actions {
@@ -271,20 +277,22 @@ p {
 }
 
 .system-shot-frame {
-  min-height: 340px;
+  min-height: 350px;
   border-radius: 28px;
   border: 1px solid var(--line-strong);
   background: linear-gradient(180deg, rgba(14, 27, 47, 0.93), rgba(10, 20, 37, 0.94));
   box-shadow: var(--shadow), 0 0 20px rgba(184, 255, 60, 0.1);
   padding: 24px;
+  display: flex;
 }
 
 .system-shot-frame--large {
-  min-height: 400px;
+  min-height: 350px;
 }
 
 .shot-placeholder {
-  min-height: 260px;
+  min-height: 280px;
+  width: 100%;
   height: 100%;
   border-radius: 22px;
   border: 1px dashed rgba(184, 255, 60, 0.42);
@@ -314,6 +322,12 @@ p {
   padding: 15px 20px;
   background: rgba(12, 22, 38, 0.82);
   line-height: 1.6;
+  transition: transform 0.22s ease, border-color 0.24s ease;
+}
+
+.feature-list li:hover {
+  transform: translateX(4px);
+  border-color: rgba(184, 255, 60, 0.4);
 }
 
 .cards-grid {
@@ -334,6 +348,20 @@ p {
 .step-card {
   padding: 38px 34px;
   transition: transform 0.22s ease, border-color 0.24s ease, box-shadow 0.24s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.info-card::before,
+.step-card::before {
+  content: "";
+  position: absolute;
+  inset: auto -60px -110px auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(184, 255, 60, 0.16) 0%, rgba(184, 255, 60, 0) 70%);
+  transition: transform 0.3s ease;
 }
 
 .info-card:hover,
@@ -341,6 +369,11 @@ p {
   transform: translateY(-4px);
   border-color: rgba(184, 255, 60, 0.45);
   box-shadow: 0 24px 42px rgba(2, 7, 14, 0.54), 0 0 18px rgba(184, 255, 60, 0.12);
+}
+
+.info-card:hover::before,
+.step-card:hover::before {
+  transform: scale(1.2);
 }
 
 .step-number {
@@ -408,12 +441,16 @@ p {
 }
 
 @media (min-width: 780px) {
-  .desktop-nav {
-    display: flex;
-  }
-
   .split-layout {
     grid-template-columns: 1fr 1fr;
+  }
+
+  #armado .split-layout article:first-child {
+    order: 2;
+  }
+
+  #armado .split-layout article:last-child {
+    order: 1;
   }
 
   .cards-grid--3 {
