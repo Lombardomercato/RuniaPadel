@@ -149,15 +149,33 @@ body {
   min-height: min(84vh, 760px);
   display: grid;
   align-items: center;
+  overflow: hidden;
+  background-image: url('assets/images/hero/hero-padel-tech.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(rgba(5, 7, 10, 0.72), rgba(5, 7, 10, 0.88));
 }
 
 .hero-gradient {
   position: absolute;
   inset: 0;
-  z-index: -1;
+  z-index: 0;
   background:
-    radial-gradient(circle at 18% 20%, rgba(57, 107, 193, 0.28), transparent 48%),
-    radial-gradient(circle at 80% 75%, rgba(184, 255, 60, 0.11), transparent 40%);
+    radial-gradient(circle at 18% 20%, rgba(57, 107, 193, 0.22), transparent 48%),
+    radial-gradient(circle at 80% 75%, rgba(184, 255, 60, 0.08), transparent 40%);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-layout,
@@ -486,5 +504,11 @@ p {
 @media (min-width: 1080px) {
   .cards-grid--4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    background-position: 62% center;
   }
 }
