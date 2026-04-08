@@ -11,12 +11,11 @@
     <link rel="icon" type="image/png" href="assets/images/logo/Favicom-chico.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="bg-grid" aria-hidden="true"></div>
-    <div class="logo-pattern" aria-hidden="true"></div>
 
     <header class="site-header">
       <div class="container header-inner">
@@ -38,17 +37,18 @@
         <div class="hero-gradient"></div>
         <div class="container hero-layout">
           <div class="hero-copy">
-            <div class="logo-stack logo-stack--hero" aria-label="MATCH_ by RUNIA">
-              <img src="assets/images/logo/match-by-runia.png" alt="MATCH_ by RUNIA" class="stack-logo stack-logo--hero" />
-              <img src="assets/images/logo/match-by-runia.png" alt="" class="stack-logo stack-logo--hero" />
-            </div>
+            <img src="assets/images/logo/match-by-runia.png" alt="MATCH_ by RUNIA" class="section-logo section-logo--hero" />
             <h1>ORGANIZÁ TORNEOS DE PÁDEL EN SEGUNDOS</h1>
-            <p class="hero-subtitle">Sistema inteligente que automatiza inscripciones, armado de partidos y horarios.</p>
+            <p class="hero-subtitle">Sistema inteligente que automatiza inscripciones, armado de partidos, horarios y seguimiento de jugadores.</p>
             <div class="hero-actions">
               <a class="btn btn-primary btn-lg" href="https://padel-app-alpha.vercel.app/" target="_blank" rel="noreferrer">Probar demo</a>
               <a class="btn btn-outline btn-lg" href="#como-funciona">Ver cómo funciona</a>
             </div>
-            <p class="hero-footnote">INSCRIPCIÓN AUTOMÁTICA · ARMADO INTELIGENTE · MENOS CAOS</p>
+            <div class="hero-chips" role="list" aria-label="Beneficios clave">
+              <span class="chip" role="listitem">INSCRIPCIÓN AUTOMÁTICA</span>
+              <span class="chip" role="listitem">ARMADO INTELIGENTE</span>
+              <span class="chip" role="listitem">MENOS CAOS OPERATIVO</span>
+            </div>
           </div>
         </div>
       </section>
@@ -65,17 +65,16 @@
       <section id="inscripcion" class="section reveal">
         <div class="container split-layout">
           <article>
-            <img src="assets/images/logo/match-by-runia.png" alt="" class="section-logo" />
-            <p class="section-kicker">INSCRIPCIÓN AUTOMÁTICA</p>
-            <h2>ALTA SIMPLE DE JUGADORES</h2>
+            <p class="section-kicker">Inscripción</p>
+            <h2>ALTA DE JUGADORES EN UN SOLO PASO</h2>
             <ul class="feature-list">
-              <li>Link directo para inscribirse.</li>
-              <li>Datos cargados una sola vez.</li>
-              <li>Restricción horaria por jugador.</li>
+              <li>Link directo para inscribirse en segundos.</li>
+              <li>Datos cargados una sola vez por jugador.</li>
+              <li>Disponibilidad horaria validada automáticamente.</li>
             </ul>
           </article>
           <article class="system-shot-frame" aria-label="Captura de inscripción">
-            <div class="shot-placeholder"><p>SIGNUP SHOT</p></div>
+            <div class="shot-placeholder"><p>Signup shot</p></div>
           </article>
         </div>
       </section>
@@ -83,143 +82,73 @@
       <section id="armado" class="section section-dark reveal">
         <div class="container split-layout">
           <article>
-            <img src="assets/images/logo/match-by-runia.png" alt="" class="section-logo" />
-            <p class="section-kicker">ARMADO AUTOMÁTICO</p>
-            <h2>TORNEO LISTO EN MINUTOS</h2>
+            <p class="section-kicker">Armado automático</p>
+            <h2>PARTIDOS Y HORARIOS LISTOS EN MINUTOS</h2>
             <ul class="feature-list">
-              <li>Cruce de ranking y categorías.</li>
-              <li>Horarios según disponibilidad real.</li>
-              <li>Zonas, llaves y partidos en un flujo.</li>
-              <li>Menos errores operativos.</li>
+              <li>Cruce inteligente por ranking y categoría.</li>
+              <li>Asignación de canchas según disponibilidad real.</li>
+              <li>Flujo único con menos errores operativos.</li>
             </ul>
           </article>
           <article class="system-shot-frame system-shot-frame--large" aria-label="Captura de armado automático">
-            <div class="shot-placeholder"><p>BUILDER SHOT</p></div>
+            <div class="shot-placeholder"><p>Builder shot</p></div>
           </article>
         </div>
       </section>
 
       <section id="inteligencia" class="section reveal">
         <div class="container">
-            <img src="assets/images/logo/match-by-runia.png" alt="" class="section-logo" />
-            <p class="section-kicker">INTELIGENCIA DEL SISTEMA</p>
-            <h2>VALIDA ANTES DE EJECUTAR</h2>
-            <div class="cards-grid cards-grid--3">
-              <article class="info-card">
-                <h3>Capacidad real</h3>
-                <p>Detecta límites de canchas y horarios antes de empezar.</p>
-              </article>
-              <article class="info-card">
-                <h3>Asignación óptima</h3>
-                <p>Distribuye partidos según reglas deportivas y operativas.</p>
-              </article>
-              <article class="info-card">
-                <h3>Decisión con datos</h3>
-                <p>Evita reprogramaciones de último momento.</p>
-              </article>
-            </div>
-        </div>
-      </section>
-
-      <section id="multi-complejo" class="section section-dark reveal">
-        <div class="container split-layout">
-          <article>
-            <img src="assets/images/logo/match-by-runia.png" alt="" class="section-logo" />
-            <p class="section-kicker">MULTI COMPLEJO</p>
-            <h2>UNA LÓGICA PARA TODAS LAS SEDES</h2>
-            <ul class="feature-list">
-              <li>Gestión de múltiples clubes.</li>
-              <li>Condiciones de cancha unificadas.</li>
-              <li>Distribución por cercanía y disponibilidad.</li>
-            </ul>
-          </article>
-          <article class="system-shot-frame" aria-label="Captura de complejos">
-            <div class="shot-placeholder"><p>VENUES SHOT</p></div>
-          </article>
-        </div>
-      </section>
-
-      <section id="whatsapp" class="section reveal">
-        <div class="container split-layout">
-          <article>
-            <img src="assets/images/logo/match-by-runia.png" alt="" class="section-logo" />
-            <p class="section-kicker">WHATSAPP</p>
-            <h2>COMUNICACIÓN AUTOMÁTICA PREMIUM</h2>
-            <ul class="feature-list">
-              <li>Envío de horarios.</li>
-              <li>Aviso de próximo partido.</li>
-              <li>Notificación de sede y recordatorios.</li>
-            </ul>
-          </article>
-          <article class="system-shot-frame" aria-label="Visual de WhatsApp">
-            <div class="shot-placeholder"><p>WHATSAPP SHOT</p></div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section logo-band section-dark reveal" aria-label="Logo MATCH_ by RUNIA">
-        <div class="container">
-          <div class="logo-stack">
-            <img src="assets/images/logo/match-by-runia.png" alt="MATCH_ by RUNIA" class="stack-logo" />
-            <img src="assets/images/logo/match-by-runia.png" alt="" class="stack-logo" />
+          <p class="section-kicker">Inteligencia del sistema</p>
+          <h2>DECISIONES CLARAS ANTES DE EJECUTAR</h2>
+          <div class="cards-grid cards-grid--3">
+            <article class="info-card">
+              <h3>Capacidad real</h3>
+              <p>Detecta límites de canchas y horarios antes de iniciar el torneo.</p>
+            </article>
+            <article class="info-card">
+              <h3>Asignación óptima</h3>
+              <p>Distribuye partidos con reglas deportivas y operativas consistentes.</p>
+            </article>
+            <article class="info-card">
+              <h3>Menos reprogramación</h3>
+              <p>Previene ajustes de último momento con validaciones anticipadas.</p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="ranking" class="section section-dark reveal">
-        <div class="container split-layout">
-          <article>
-            <img src="assets/images/logo/match-by-runia.png" alt="" class="section-logo" />
-            <p class="section-kicker">RANKING</p>
-            <h2>HISTORIAL Y EVOLUCIÓN DE CADA JUGADOR</h2>
-            <ul class="feature-list">
-              <li>Ranking por categoría.</li>
-              <li>Historial centralizado.</li>
-              <li>Estadísticas para mejorar cada torneo.</li>
-            </ul>
-          </article>
-          <article class="system-shot-frame" aria-label="Captura de ranking">
-            <div class="shot-placeholder"><p>RANKING SHOT</p></div>
-          </article>
-        </div>
-      </section>
-
-      <section id="como-funciona" class="section reveal">
+      <section id="como-funciona" class="section section-dark reveal">
         <div class="container">
-          <img src="assets/images/logo/match-by-runia.png" alt="" class="section-logo" />
-          <p class="section-kicker">CÓMO FUNCIONA</p>
-          <h2>FLUJO CLARO EN 4 PASOS</h2>
+          <p class="section-kicker">Cómo funciona</p>
+          <h2>UN FLUJO SIMPLE EN 4 PASOS</h2>
           <div class="cards-grid cards-grid--4">
             <article class="step-card">
               <span class="step-number">01</span>
               <h3>Inscripción</h3>
-              <p>El jugador completa el link.</p>
+              <p>Los jugadores completan el formulario.</p>
             </article>
             <article class="step-card">
               <span class="step-number">02</span>
               <h3>Validación</h3>
-              <p>El sistema ordena y verifica.</p>
+              <p>El sistema ordena y confirma la disponibilidad.</p>
             </article>
             <article class="step-card">
               <span class="step-number">03</span>
               <h3>Armado</h3>
-              <p>Se generan zonas, llaves y horarios.</p>
+              <p>Se generan partidos, horarios y canchas.</p>
             </article>
             <article class="step-card">
               <span class="step-number">04</span>
               <h3>Comunicación</h3>
-              <p>Cada jugador recibe su información.</p>
+              <p>Cada jugador recibe su información por WhatsApp.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="cta" class="section section-dark reveal">
+      <section id="cta" class="section reveal">
         <div class="container final-cta">
-          <div class="logo-stack logo-stack--cta" aria-label="Logo MATCH_ by RUNIA">
-            <img src="assets/images/logo/match-by-runia.png" alt="MATCH_ by RUNIA" class="stack-logo" />
-            <img src="assets/images/logo/match-by-runia.png" alt="" class="stack-logo" />
-          </div>
+          <img src="assets/images/logo/match-by-runia.png" alt="MATCH_ by RUNIA" class="section-logo section-logo--cta" />
           <h2>EMPEZÁ A ORGANIZAR TORNEOS CON MATCH<span class="brand-underscore">_</span></h2>
           <p>Automatizá tu operación con una experiencia clara, rápida y premium.</p>
           <div class="hero-actions">
@@ -235,7 +164,7 @@
         <a href="#hero" class="brand" aria-label="MATCH_ by RUNIA">
           <img src="assets/images/logo/match-by-runia.png" alt="MATCH_ by RUNIA" class="brand-logo" />
         </a>
-        <p>© 2026 MATCH_ by RUNIA</p>
+        <p>© 2026 MATCH_ by RUNIA · Powered by RUNIA</p>
       </div>
     </footer>
 
