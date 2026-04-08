@@ -103,25 +103,35 @@ body {
 .hero-layout { grid-template-columns: 1fr; }
 .hero-copy { max-width: 700px; }
 
-.hero-identity {
-  display: inline-grid;
-  gap: 2px;
+.logo-stack {
+  display: grid;
+  gap: clamp(16px, 2.5vw, 24px);
+  justify-items: center;
+}
+
+.logo-stack--hero {
+  justify-items: start;
   margin-bottom: 24px;
-  font-family: 'Barlow Condensed', sans-serif;
-  line-height: .98;
 }
 
-.hero-identity span:first-child {
-  color: var(--text);
-  letter-spacing: .12em;
-  font-size: clamp(2.4rem, 9vw, 6rem);
-  font-weight: 800;
+.logo-stack--cta {
+  margin-bottom: 26px;
 }
 
-.hero-identity span:last-child {
-  color: var(--lime);
-  letter-spacing: .22em;
-  font-size: clamp(.84rem, 2.2vw, 1.15rem);
+.stack-logo {
+  width: min(100%, clamp(260px, 45vw, 460px));
+  height: auto;
+  opacity: 0.96;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.35));
+}
+
+.stack-logo--hero {
+  width: min(100%, clamp(280px, 50vw, 500px));
+}
+
+.logo-band {
+  padding-top: clamp(68px, 8vw, 98px);
+  padding-bottom: clamp(68px, 8vw, 98px);
 }
 
 h1, h2, h3 {
