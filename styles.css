@@ -38,6 +38,19 @@ body {
   background-size: 36px 36px;
 }
 
+.logo-pattern {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.08;
+  background-image: url("assets/images/logo/match-by-runia.png");
+  background-size: clamp(118px, 14vw, 180px) auto;
+  background-repeat: space;
+  background-position: center;
+  filter: grayscale(1) brightness(1.6);
+}
+
 .container { width: min(1120px, 90%); margin: 0 auto; }
 .section { position: relative; padding: clamp(104px, 13vw, 184px) 0; }
 .section-dark {
@@ -102,6 +115,23 @@ body {
 
 .hero-layout { grid-template-columns: 1fr; }
 .hero-copy { max-width: 700px; }
+
+.section-logo {
+  width: clamp(142px, 22vw, 212px);
+  height: auto;
+  margin-bottom: 16px;
+  opacity: 0.82;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.35));
+}
+
+.section-logo--hero {
+  margin-bottom: 20px;
+  opacity: 0.96;
+}
+
+.section-logo--cta {
+  margin: 0 auto 22px;
+}
 
 .hero-identity {
   display: inline-grid;
