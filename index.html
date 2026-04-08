@@ -3,10 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MATCH_ by RUNIA | Torneos sin caos</title>
+    <title>MATCH_ by RUNIA | Torneos de pádel automáticos</title>
+    <meta property="og:title" content="MATCH_ | Torneos de pádel automáticos" />
+    <meta property="og:site_name" content="MATCH_" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lombardomercato.github.io/RuniaPadel/" />
+    <meta property="og:image" content="https://lombardomercato.github.io/RuniaPadel/assets/images/logo/match-by-runia.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MATCH_ | Torneos de pádel automáticos" />
     <meta
       name="description"
-      content="MATCH_ by RUNIA automatiza la organización de torneos: inscripciones, partidos y horarios en un flujo claro y simple."
+      content="MATCH_ by RUNIA organiza torneos de pádel automáticamente: inscripción inteligente, armado automático, lógica multi complejo y comunicación por WhatsApp."
     />
     <meta
       property="og:description"
@@ -19,7 +26,7 @@
     <link rel="icon" type="image/png" href="assets/images/logo/Favicom-chico.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -29,107 +36,124 @@
       <div class="container header-inner">
         <a href="#hero" class="brand" aria-label="MATCH_ by RUNIA inicio">
           <img src="assets/images/logo/match-by-runia.png" alt="MATCH_ by RUNIA" class="brand-logo" />
-          <span class="brand-text">MATCH_<small>by RUNIA</small></span>
         </a>
-        <a href="#cta" class="btn btn-primary nav-cta">Probar demo</a>
+        <nav class="desktop-nav" aria-label="Navegación principal">
+          <a href="#cta" class="nav-demo">DEMO</a>
+        </nav>
       </div>
     </header>
 
     <main>
-      <section id="hero" class="section hero reveal">
-        <div class="hero-gradient" aria-hidden="true"></div>
-        <div class="container hero-content">
-          <p class="hero-signature"><strong>MATCH_</strong><span>by RUNIA</span></p>
-          <h1>ORGANIZÁ TORNEOS SIN CAOS</h1>
-          <p class="hero-subtitle">Sistema que arma partidos, horarios y jugadores automáticamente.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://padel-app-alpha.vercel.app/" target="_blank" rel="noreferrer">Probar demo</a>
-            <a class="btn btn-outline" href="#como-funciona">Ver cómo funciona</a>
+      <section id="hero" class="section hero">
+        <div class="hero-gradient"></div>
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <h1>ORGANIZÁ TORNEOS DE PÁDEL EN SEGUNDOS</h1>
+            <p class="hero-subtitle">Sistema inteligente que automatiza inscripciones, armado de partidos, horarios y seguimiento de jugadores.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-lg" href="https://padel-app-alpha.vercel.app/" target="_blank" rel="noreferrer">Probar demo</a>
+              <a class="btn btn-outline btn-lg" href="#como-funciona">Ver cómo funciona</a>
+            </div>
+            <div class="hero-chips" role="list" aria-label="Beneficios clave">
+              <span class="chip" role="listitem">INSCRIPCIÓN AUTOMÁTICA</span>
+              <span class="chip" role="listitem">ARMADO INTELIGENTE</span>
+              <span class="chip" role="listitem">MENOS CAOS OPERATIVO</span>
+            </div>
           </div>
-          <div class="hero-chips" role="list" aria-label="Puntos clave">
-            <span class="chip" role="listitem">INSCRIPCIÓN AUTOMÁTICA</span>
-            <span class="chip" role="listitem">ARMADO INTELIGENTE</span>
-            <span class="chip" role="listitem">MENOS ERRORES</span>
-          </div>
         </div>
       </section>
 
-      <section id="problema" class="section reveal">
-        <div class="container stack-block">
-          <h2>ORGANIZAR TORNEOS ES CAOS</h2>
-          <ul class="simple-list">
-            <li>horarios que no coinciden</li>
-            <li>jugadores que cambian todo</li>
-            <li>canchas que no alcanzan</li>
-          </ul>
-          <p class="section-close">Perdés tiempo y generás errores.</p>
+      <section id="inscripcion" class="section reveal">
+        <div class="container split-layout">
+          <article>
+            <p class="section-kicker">Inscripción</p>
+            <h2>ALTA DE JUGADORES EN UN SOLO PASO</h2>
+            <ul class="feature-list">
+              <li>Link directo para inscribirse en segundos.</li>
+              <li>Datos cargados una sola vez por jugador.</li>
+              <li>Disponibilidad horaria validada automáticamente.</li>
+            </ul>
+          </article>
+          <article class="system-shot-frame" aria-label="Captura de inscripción">
+            <div class="shot-placeholder"><p>Signup shot</p></div>
+          </article>
         </div>
       </section>
 
-      <section id="solucion" class="section section-dark reveal">
-        <div class="container stack-block">
-          <h2>MATCH LO HACE POR VOS</h2>
-          <ul class="simple-list simple-list--cards">
-            <li>organiza jugadores automáticamente</li>
-            <li>arma partidos y horarios</li>
-            <li>respeta restricciones</li>
-            <li>detecta errores antes de empezar</li>
-          </ul>
+      <section id="armado" class="section section-dark reveal">
+        <div class="container split-layout">
+          <article>
+            <p class="section-kicker">Armado automático</p>
+            <h2>PARTIDOS Y HORARIOS LISTOS EN MINUTOS</h2>
+            <ul class="feature-list">
+              <li>Cruce inteligente por ranking y categoría.</li>
+              <li>Asignación de canchas según disponibilidad real.</li>
+              <li>Flujo único con menos errores operativos.</li>
+            </ul>
+          </article>
+          <article class="system-shot-frame system-shot-frame--large" aria-label="Captura de armado automático">
+            <div class="shot-placeholder"><p>Builder shot</p></div>
+          </article>
         </div>
       </section>
 
-      <section id="como-funciona" class="section reveal">
+      <section id="inteligencia" class="section reveal">
         <div class="container">
-          <h2>CÓMO FUNCIONA</h2>
+          <p class="section-kicker">Inteligencia del sistema</p>
+          <h2>DECISIONES CLARAS ANTES DE EJECUTAR</h2>
+          <div class="cards-grid cards-grid--3">
+            <article class="info-card">
+              <h3>Capacidad real</h3>
+              <p>Detecta límites de canchas y horarios antes de iniciar el torneo.</p>
+            </article>
+            <article class="info-card">
+              <h3>Asignación óptima</h3>
+              <p>Distribuye partidos con reglas deportivas y operativas consistentes.</p>
+            </article>
+            <article class="info-card">
+              <h3>Menos reprogramación</h3>
+              <p>Previene ajustes de último momento con validaciones anticipadas.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="como-funciona" class="section section-dark reveal">
+        <div class="container">
+          <p class="section-kicker">Cómo funciona</p>
+          <h2>UN FLUJO SIMPLE EN 4 PASOS</h2>
           <div class="cards-grid cards-grid--4">
             <article class="step-card">
-              <span class="step-number">1</span>
-              <p>El jugador se inscribe</p>
+              <span class="step-number">01</span>
+              <h3>Inscripción</h3>
+              <p>Los jugadores completan el formulario.</p>
             </article>
             <article class="step-card">
-              <span class="step-number">2</span>
-              <p>El sistema organiza</p>
+              <span class="step-number">02</span>
+              <h3>Validación</h3>
+              <p>El sistema ordena y confirma la disponibilidad.</p>
             </article>
             <article class="step-card">
-              <span class="step-number">3</span>
-              <p>Se arma el torneo</p>
+              <span class="step-number">03</span>
+              <h3>Armado</h3>
+              <p>Se generan partidos, horarios y canchas.</p>
             </article>
             <article class="step-card">
-              <span class="step-number">4</span>
-              <p>Todos reciben su info</p>
+              <span class="step-number">04</span>
+              <h3>Comunicación</h3>
+              <p>Cada jugador recibe su información por WhatsApp.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="producto" class="section section-dark reveal">
-        <div class="container">
-          <h2>CONTROL TOTAL DEL TORNEO</h2>
-          <div class="product-shots">
-            <figure class="shot-frame"><img src="assets/images/hero/hero-padel-tech.webp" alt="Vista principal del sistema MATCH_ by RUNIA" /></figure>
-            <figure class="shot-frame"><img src="assets/images/hero/hero-padel-tech.webp" alt="Pantalla de organización de torneos" /></figure>
-          </div>
-        </div>
-      </section>
-
-      <section id="beneficios" class="section reveal">
-        <div class="container">
-          <h2>MÁS ORDEN. MENOS CAOS.</h2>
-          <div class="cards-grid cards-grid--4">
-            <article class="info-card"><p>menos tiempo operativo</p></article>
-            <article class="info-card"><p>menos errores</p></article>
-            <article class="info-card"><p>mejor experiencia</p></article>
-            <article class="info-card"><p>más torneos</p></article>
-          </div>
-        </div>
-      </section>
-
-      <section id="cta" class="section section-dark reveal">
+      <section id="cta" class="section reveal">
         <div class="container final-cta">
-          <h2>EMPEZÁ A ORGANIZAR MEJOR</h2>
+          <h2>EMPEZÁ A ORGANIZAR TORNEOS CON MATCH<span class="brand-underscore">_</span></h2>
+          <p>Automatizá tu operación con una experiencia clara, rápida y premium.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://padel-app-alpha.vercel.app/" target="_blank" rel="noreferrer">Probar demo</a>
-            <a class="btn btn-outline" href="https://padel-app-alpha.vercel.app/" target="_blank" rel="noreferrer">Solicitar demo</a>
+            <a class="btn btn-primary btn-lg" href="https://padel-app-alpha.vercel.app/" target="_blank" rel="noreferrer">Probar demo</a>
+            <a class="btn btn-outline btn-lg" href="#hero">Ver landing</a>
           </div>
         </div>
       </section>
@@ -137,7 +161,7 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>© 2026 MATCH_ by RUNIA</p>
+        <p>© 2026 MATCH_ by RUNIA · Powered by RUNIA</p>
       </div>
     </footer>
 
