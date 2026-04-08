@@ -52,7 +52,7 @@ body {
 
 .section {
   position: relative;
-  padding: clamp(110px, 14vw, 200px) 0;
+  padding: clamp(120px, 15vw, 220px) 0;
   --float-offset: 0px;
 }
 
@@ -184,7 +184,7 @@ body {
 .hero-layout,
 .split-layout {
   display: grid;
-  gap: clamp(40px, 6vw, 78px);
+  gap: clamp(50px, 7vw, 96px);
   align-items: center;
 }
 
@@ -205,6 +205,10 @@ h2 {
   line-height: 1.12;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+}
+
+.section h2 {
+  margin-bottom: 18px;
 }
 
 h1 {
@@ -342,13 +346,19 @@ p {
   box-shadow: 0 0 0 1px rgba(184, 255, 60, 0.22) inset;
 }
 
+.section-subtitle {
+  color: #cad7f0;
+  max-width: 52ch;
+  margin-bottom: 20px;
+}
+
 .system-shot-frame {
   min-height: 350px;
-  border-radius: 28px;
+  border-radius: 30px;
   border: 1px solid var(--line-strong);
   background: linear-gradient(180deg, rgba(14, 27, 47, 0.93), rgba(10, 20, 37, 0.94));
-  box-shadow: var(--shadow), 0 0 20px rgba(184, 255, 60, 0.1);
-  padding: 24px;
+  box-shadow: var(--shadow), 0 0 22px rgba(184, 255, 60, 0.08);
+  padding: clamp(14px, 1.8vw, 20px);
   display: flex;
 }
 
@@ -356,22 +366,15 @@ p {
   min-height: 350px;
 }
 
-.shot-placeholder {
-  min-height: 280px;
+.system-shot {
   width: 100%;
   height: 100%;
-  border-radius: 22px;
-  border: 1px dashed rgba(184, 255, 60, 0.42);
-  background: linear-gradient(180deg, rgba(9, 17, 30, 0.95), rgba(10, 20, 37, 0.86));
-  display: grid;
-  place-content: center;
-}
-
-.shot-placeholder p {
-  margin: 0;
-  color: #dce6f9;
-  font-weight: 500;
-  letter-spacing: 0.04em;
+  min-height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid rgba(170, 188, 226, 0.26);
+  box-shadow: 0 18px 36px rgba(1, 5, 12, 0.52);
+  background: rgba(9, 16, 30, 0.72);
 }
 
 .feature-list {
@@ -470,6 +473,35 @@ p {
   justify-content: center;
 }
 
+
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: #25d366;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 14px 30px rgba(14, 24, 38, 0.5);
+  z-index: 50;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px rgba(14, 24, 38, 0.6);
+}
+
+.whatsapp-float svg {
+  width: 30px;
+  height: 30px;
+}
+
 .site-footer {
   border-top: 1px solid rgba(150, 170, 205, 0.18);
   padding: 32px 0 42px;
@@ -558,5 +590,12 @@ p {
 @media (max-width: 700px) {
   .hero {
     background-position: 62% center;
+  }
+
+  .whatsapp-float {
+    width: 54px;
+    height: 54px;
+    right: 16px;
+    bottom: 16px;
   }
 }
