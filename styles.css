@@ -52,7 +52,7 @@ body {
 
 .section {
   position: relative;
-  padding: clamp(120px, 15vw, 220px) 0;
+  padding: clamp(72px, 8vw, 92px) 0;
   --float-offset: 0px;
 }
 
@@ -527,13 +527,13 @@ p {
 .step-card {
   opacity: 0;
   transform: translateY(18px);
-  transition: opacity 0.65s ease, transform 0.65s ease;
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.reveal.visible,
-.system-shot-frame.visible,
-.info-card.visible,
-.step-card.visible {
+.reveal.active,
+.system-shot-frame.active,
+.info-card.active,
+.step-card.active {
   opacity: 1;
   transform: translateY(0);
 }
