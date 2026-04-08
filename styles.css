@@ -122,6 +122,27 @@ body {
   text-shadow: var(--lime-glow);
 }
 
+.desktop-nav .nav-demo {
+  color: #122002;
+  border: 1px solid rgba(184, 255, 60, 0.58);
+  border-radius: 999px;
+  background: linear-gradient(135deg, #d2ff78 0%, #b8ff3c 52%, #a5ef24 100%);
+  box-shadow:
+    0 10px 24px rgba(184, 255, 60, 0.24),
+    0 0 0 1px rgba(220, 255, 154, 0.4) inset;
+  padding: 0.46rem 1rem;
+  text-shadow: none;
+}
+
+.desktop-nav .nav-demo:hover {
+  color: #0f1801;
+  border-color: rgba(210, 255, 126, 0.9);
+  text-shadow: none;
+  box-shadow:
+    0 14px 30px rgba(184, 255, 60, 0.32),
+    0 0 0 1px rgba(236, 255, 198, 0.5) inset;
+}
+
 .hero {
   padding-top: clamp(86px, 10vw, 126px);
   padding-bottom: clamp(74px, 9vw, 112px);
