@@ -38,6 +38,19 @@ body {
   background-size: 36px 36px;
 }
 
+.logo-pattern {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.08;
+  background-image: url("assets/images/logo/match-by-runia.png");
+  background-size: clamp(118px, 14vw, 180px) auto;
+  background-repeat: space;
+  background-position: center;
+  filter: grayscale(1) brightness(1.6);
+}
+
 .container { width: min(1120px, 90%); margin: 0 auto; }
 .section { position: relative; padding: clamp(104px, 13vw, 184px) 0; }
 .section-dark {
