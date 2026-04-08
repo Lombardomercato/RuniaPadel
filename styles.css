@@ -123,24 +123,24 @@ body {
 }
 
 .desktop-nav .nav-demo {
-  color: #182100;
-  border: 1px solid rgba(215, 179, 29, 0.68);
+  color: #122002;
+  border: 1px solid rgba(184, 255, 60, 0.58);
   border-radius: 999px;
-  background: linear-gradient(135deg, #ffe476 0%, #ffd24f 58%, #ffc938 100%);
+  background: linear-gradient(135deg, #d2ff78 0%, #b8ff3c 52%, #a5ef24 100%);
   box-shadow:
-    0 10px 24px rgba(255, 203, 51, 0.24),
-    0 0 0 1px rgba(255, 231, 145, 0.42) inset;
+    0 10px 24px rgba(184, 255, 60, 0.24),
+    0 0 0 1px rgba(220, 255, 154, 0.4) inset;
   padding: 0.46rem 1rem;
   text-shadow: none;
 }
 
 .desktop-nav .nav-demo:hover {
-  color: #101700;
-  border-color: rgba(255, 222, 115, 0.9);
+  color: #0f1801;
+  border-color: rgba(210, 255, 126, 0.9);
   text-shadow: none;
   box-shadow:
-    0 14px 30px rgba(255, 203, 51, 0.32),
-    0 0 0 1px rgba(255, 241, 186, 0.56) inset;
+    0 14px 30px rgba(184, 255, 60, 0.32),
+    0 0 0 1px rgba(236, 255, 198, 0.5) inset;
 }
 
 .hero {
