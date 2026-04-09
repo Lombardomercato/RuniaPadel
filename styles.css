@@ -419,7 +419,7 @@ p {
 }
 
 .pricing-card {
-  padding: 34px 30px;
+  padding: 32px 24px;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -450,30 +450,39 @@ p {
   box-shadow: 0 28px 46px rgba(2, 7, 14, 0.62), 0 0 0 1px rgba(184, 255, 60, 0.22) inset;
 }
 
-.pricing-card[data-badge]::after {
-  content: attr(data-badge);
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  font-size: 0.75rem;
-  font-weight: 600;
+.pricing-head {
+  min-height: 2.4em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.pricing-plan {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(1.15rem, 1.45vw, 1.55rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+  min-height: 2.2em;
+}
+
+.pricing-plan--compact {
+  font-size: clamp(1rem, 1.25vw, 1.35rem);
+  letter-spacing: 0.015em;
+}
+
+.pricing-badge {
+  flex-shrink: 0;
+  font-size: 0.68rem;
+  font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #1b2b08;
   background: linear-gradient(135deg, #d6ff83 0%, #b8ff3c 100%);
   padding: 0.34rem 0.72rem;
   border-radius: 999px;
-  z-index: 2;
-}
-
-.pricing-plan {
-  margin: 0;
-  color: var(--text);
-  font-size: clamp(1.3rem, 1.8vw, 1.7rem);
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  line-height: 1.15;
-  min-height: 2.4em;
 }
 
 .pricing-description {
@@ -794,9 +803,7 @@ p {
     padding: 28px 22px;
   }
 
-  .pricing-card[data-badge]::after {
-    top: 12px;
-    right: 12px;
+  .pricing-badge {
     font-size: 0.68rem;
     padding: 0.28rem 0.62rem;
   }
