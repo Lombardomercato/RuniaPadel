@@ -420,7 +420,8 @@ p {
 
 .pricing-card {
   padding: 34px 30px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 18px;
   position: relative;
   overflow: hidden;
@@ -468,18 +469,22 @@ p {
 .pricing-plan {
   margin: 0;
   color: var(--text);
-  font-size: clamp(1.45rem, 2vw, 1.8rem);
+  font-size: clamp(1.3rem, 1.8vw, 1.7rem);
   font-weight: 700;
   letter-spacing: 0.03em;
+  line-height: 1.15;
+  min-height: 2.4em;
 }
 
 .pricing-description {
   color: #d8e3f7;
+  min-height: 3.4em;
 }
 
 .pricing-values {
   display: grid;
   gap: 5px;
+  min-height: 5.2em;
 }
 
 .pricing-values p {
@@ -501,10 +506,20 @@ p {
   font-size: 0.95rem;
 }
 
+.pricing-feature-list li:hover {
+  transform: none;
+}
+
 .pricing-card .btn {
-  margin-top: 4px;
+  margin-top: auto;
   justify-self: start;
   align-self: end;
+}
+
+.partners-marquee {
+  margin-top: 26px;
+  overflow: hidden;
+  padding-inline: clamp(16px, 2.5vw, 34px);
 }
 
 .partners-marquee__track {
@@ -513,7 +528,8 @@ p {
   width: max-content;
   gap: clamp(44px, 6vw, 84px);
   padding: clamp(24px, 3vw, 34px) 0;
-  animation: partners-marquee-scroll 30s linear infinite;
+  will-change: transform;
+  animation: partners-marquee-scroll var(--partners-speed, 30s) linear infinite;
 }
 
 .partners-marquee:hover .partners-marquee__track {
@@ -747,7 +763,7 @@ p {
   }
 }
 
-@media (min-width: 1320px) {
+@media (min-width: 1200px) {
   .pricing-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -772,5 +788,16 @@ p {
 
   .partners-marquee__track {
     animation-duration: 24s;
+  }
+
+  .pricing-card {
+    padding: 28px 22px;
+  }
+
+  .pricing-card[data-badge]::after {
+    top: 12px;
+    right: 12px;
+    font-size: 0.68rem;
+    padding: 0.28rem 0.62rem;
   }
 }
