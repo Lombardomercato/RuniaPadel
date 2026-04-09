@@ -39,3 +39,46 @@ const setupSectionParallax = () => {
 };
 
 setupSectionParallax();
+
+const setupPartnersMarquee = () => {
+  const marquee = document.querySelector('.partners-marquee');
+  const track = marquee?.querySelector('.partners-marquee__track');
+
+  if (!marquee || !track) return;
+
+  const originalItems = [...track.children].map((node) => node.cloneNode(true));
+  const minItems = originalItems.length;
+
+  const buildTrack = () => {
+    track.innerHTML = '';
+
+    const containerWidth = marquee.clientWidth;
+    let safeGuard = 0;
+
+    while (track.scrollWidth < containerWidth * 2 && safeGuard < 12) {
+      originalItems.forEach((node) => {
+        const clone = node.cloneNode(true);
+        const img = clone.querySelector('img');
+
+        if (img && safeGuard > 0) {
+          img.alt = '';
+          img.setAttribute('aria-hidden', 'true');
+        }
+
+        track.appendChild(clone);
+      });
+
+      safeGuard += 1;
+      if (safeGuard === 1 && minItems === 1) break;
+    }
+
+    const pixelsPerSecond = 70;
+    const duration = Math.max(16, track.scrollWidth / 2 / pixelsPerSecond);
+    track.style.setProperty('--partners-speed', `${duration.toFixed(2)}s`);
+  };
+
+  buildTrack();
+  window.addEventListener('resize', buildTrack);
+};
+
+setupPartnersMarquee();
